@@ -1,6 +1,6 @@
-# Sistema de Gestión de Inventario para Farmacia
+# Sistema de Topico Institucional
 
-Este proyecto es un sistema de gestión de inventario para farmacias, diseñado para facilitar el control de insumos, atenciones, y procedimientos realizados. Esta aplicación permite gestionar la entrada y salida de inventario, así como el registro de pacientes, personal responsable y procedimientos aplicados.
+Este proyecto consiste en un sistema web desarrollado para la gestión del Tópico de una institución educativa. Permite registrar atenciones médicas, insumos utilizados, procedimientos realizados y personal responsable. El sistema fue implementado utilizando PHP, MySQL, JavaScript y HTML, bajo la metodología ágil Extreme Programming (XP).
 
 ## Características
 
@@ -21,7 +21,7 @@ Este proyecto es un sistema de gestión de inventario para farmacias, diseñado 
 1. **Sube el proyecto al servidor**: Asegúrate de que todos los archivos están en el directorio raíz de tu servidor o en el directorio deseado.
 2. **Configura la base de datos**:
    - Crea una base de datos en tu servidor y ejecuta los scripts de tablas incluidos en el proyecto.
-   - Configura el archivo `config.php` (o el archivo de conexión) con tus credenciales de MySQL.
+   - Configura el archivo `conexion.php` (o el archivo de conexión) con tus credenciales de MySQL.
 3. **Configura `.htaccess`**: Si no tienes HTTPS, comenta la línea que redirige a HTTPS.
 4. **Prueba el sistema**: Accede a la URL del proyecto en tu navegador y verifica que todo funcione correctamente.
 
