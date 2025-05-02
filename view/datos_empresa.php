@@ -43,19 +43,46 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card card-pricing">
-                                <div class="card-body text-center">
-                                    <img src="../assets/images/users/icon-system.jpg" alt="Logo" class="card-pricing-icon" style="width: 50px; height: 50px; border-radius: 50%; object-fit: contain;">
-                                    <h4 class="font-weight-bold mt-4 text-uppercase">MEDIATV SYSTEMS</h4>
-                                    <p class="text-muted mt-3 mb-4" style="text-align: justify;"> Mediatv Systems es el departamento de desarrollo
-                                        de sistemas web de Mediatv, especializado en ofrecer soluciones tecnológicas personalizadas
-                                        para empresas, negocios y particulares. Nos dedicamos al diseño, desarrollo e implementación
-                                        de plataformas web innovadoras, desde sitios corporativos hasta aplicaciones a medida,
-                                        asegurando la máxima funcionalidad, rendimiento y seguridad. Con un enfoque centrado
-                                        en las necesidades de cada cliente, Mediatv Systems trabaja para crear sistemas eficientes
-                                        que optimizan procesos, mejoran la experiencia digital y facilitan la gestión de contenidos.
-                                        Independientemente del sector o tamaño del proyecto, nuestro compromiso es brindar soluciones
-                                        tecnológicas que impulsen el éxito de nuestros clientes en un entorno digital en constante evolución.
+                            <div class="card-body" style="text-align: center;">
+                                    <img src="../assets/images/Logo_Sistopi.png" alt="Logo" style="width: 6%;">
+                                    <h4 class="font-weight-bold mt-4 text-uppercase">DATOS DEL SISTEMA</h4>
+                                    <p class="text-muted mt-3 mb-4" style="text-align: justify;">
+                                        El Sistema de Tópico Institucional es una plataforma web diseñada para registrar y gestionar de forma
+                                        ordenada las atenciones médicas brindadas dentro del instituto. Permite al personal del tópico registrar
+                                        datos de pacientes, registrar procedimientos realizados, controlar el uso de insumos médicos y generar
+                                        reportes automáticos. Su interfaz es sencilla, segura y accesible desde cualquier computadora conectada
+                                        a internet.
                                     </p>
+                                    <table border="1" cellpadding="8" cellspacing="0" style="margin: auto;">
+                                        <thead style="background-color:#f2f2f2;">
+                                            <tr>
+                                                <th>Característica</th>
+                                                <th>Descripción</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Nombre del sistema</td>
+                                                <td>(SISTOPI) Sistema de Tópico Institucional</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Objetivo</td>
+                                                <td>Optimizar el registro y control de atenciones médicas</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Usuarios</td>
+                                                <td>Personal de tópico autorizado</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Funciones principales</td>
+                                                <td>Registro de atenciones, gestión de insumos, reportes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plataforma</td>
+                                                <td>Web (acceso mediante navegador)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div> <!-- end Pricing_card -->
                         </div><!-- end col -->
