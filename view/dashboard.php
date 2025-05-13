@@ -300,49 +300,51 @@ $result = $conn->query($sql); // Aquí se debe tener la conexión correcta
                                     <div class="table-responsive">
                                         <!-- Tabla para mostrar los medicamentos -->
                                         <table class="table table-centered table-striped table-nowrap mb-0">
-    <thead>
-        <tr>
-            <th>COD</th>
-            <th>Producto</th>
-            <th>Vencimiento</th>
-            <th>Aviso</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        // Verificar si la consulta devuelve resultados
-        if ($result->num_rows > 0) {
-            // Recorrer los resultados
-            while ($row = $result->fetch_assoc()) {
-                $id = $row['id'];
-                $nombre = $row['nombre'];
-                $vencimiento = $row['fecha_vencimiento'];
-                $aviso = '';
+                                            <thead>
+                                                <tr>
+                                                    <th>COD</th>
+                                                    <th>Producto</th>
+                                                    <th>Vencimiento</th>
+                                                    <th>Aviso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php
+                                                // Verificar si la consulta devuelve resultados
+                                                if ($result->num_rows > 0) {
+                                                    // Recorrer los resultados
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        $id = $row['id'];
+                                                        $nombre = $row['nombre'];
+                                                        $vencimiento = $row['fecha_vencimiento'];
+                                                        $aviso = '';
+                                                        $clase = '';
 
-                // Verificar si el medicamento está vencido o por vencer
-                if ($vencimiento < $hoy) {
-                    // Si la fecha de vencimiento es menor que la fecha actual
-                    $aviso = 'Vencido'; 
-                } elseif ($vencimiento <= $unaSemana) {
-                    // Si la fecha de vencimiento está dentro de una semana
-                    $aviso = 'Por Vencer'; 
-                }
+                                                        // Verificar si el medicamento está vencido o por vencer
+                                                        if ($vencimiento < $hoy) {
+                                                            $aviso = 'Vencido';
+                                                            $clase = 'btn btn-danger btn-sm'; // Fondo rojo
+                                                        } elseif ($vencimiento <= $unaSemana) {
+                                                            $aviso = 'Por Vencer';
+                                                            $clase = 'btn btn-warning btn-sm'; // Fondo amarillo
+                                                        }
 
-                // Mostrar la fila en la tabla
-                echo "<tr>
-                        <td>$id</td>
-                        <td>$nombre</td>
-                        <td>$vencimiento</td>
-                        <td>$aviso</td>
-                    </tr>";
-            }
-        } else {
-            // Si no hay medicamentos para mostrar
-            echo "<tr><td colspan='4' class='text-center'>No hay medicamentos próximos a vencer o vencidos.</td></tr>";
-        }
-        ?>
-    </tbody>
-</table>
+                                                        // Mostrar la fila en la tabla
+                                                        echo "<tr>
+                <td>$id</td>
+                <td>$nombre</td>
+                <td>$vencimiento</td>
+                <td><span class='$clase'>$aviso</span></td>
+              </tr>";
+                                                    }
+                                                } else {
+                                                    // Si no hay medicamentos para mostrar
+                                                    echo "<tr><td colspan='4' class='text-center'>No hay medicamentos próximos a vencer o vencidos.</td></tr>";
+                                                }
+                                                ?>
+                                            </tbody>
+
+                                        </table>
                                     </div>
 
                                 </div>
@@ -418,9 +420,9 @@ $result = $conn->query($sql); // Aquí se debe tener la conexión correcta
                                                                 <?php
                                                                 // Mostrar mensaje de aviso dependiendo del stock
                                                                 if ($medicamento['stock'] == 0) {
-                                                                    echo "Agotado";
+                                                                    echo "<span class='btn btn-danger btn-sm'>Agotado</span>";
                                                                 } else {
-                                                                    echo "Por Agotar";
+                                                                    echo "<span class='btn btn-warning btn-sm'>Por Agotar</span>";
                                                                 }
                                                                 ?>
                                                             </td>
