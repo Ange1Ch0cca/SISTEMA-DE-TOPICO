@@ -85,14 +85,9 @@
 
             <ul class="metismenu list-unstyled" id="side-menu">
                 <?php if ($_SESSION['cargo'] == 'Administrador'): ?>
-                    <div class="mt-3">
-                        <a href="https://wa.me/51955436291?text=Hola,%20estoy%20interesado%20en%20contratar%20su%20sistema%20de%20tópico." target="_blank" class="btn btn-secondary buynow-link w-100 px-2">
-                            Contratar Sistema
-                        </a>
-                    </div>
                     <div class="mt-3 mb-5">
-                        <a href="https://wa.me/51906829934?text=Hola,%20quiero%20contactar%20con%20el%20departamento%20de%20sistemas%20para%20desarrollar%20un%20proyecto%20que%20tengo%20en%20mente." target="_blank" class="btn btn-dark buynow-link w-100 px-2">
-                            Departamento de Sistemas
+                        <a href="https://wa.me/51906829934?text=Hola,%20me%20interesa%20el%20sistema." target="_blank" class="btn btn-dark buynow-link w-100 px-2">
+                            Contactar al Desarrollador
                         </a>
                     </div>
                 <?php endif; ?>
