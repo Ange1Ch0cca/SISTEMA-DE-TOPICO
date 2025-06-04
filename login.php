@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $dni = $_POST['dni'];
     $password = $_POST['password'];
 
-    // Preparar y ejecutar la consulta SQL
+    // Preparar y ejecutar la consulta SQL, SE UTILIZA BINARY PARA RECONOCER MAYUSCULAS Y MINUSCULAS
     $sql = "SELECT * FROM usuarios WHERE dni = ? AND BINARY password = ? AND estado = 'Activo'";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $dni, $password);
